@@ -29,7 +29,7 @@ Because of the training time I could not test more parameters, but maybe it's po
 First, unzip train.zip and test.zip in directory `data/`. Then, you will have a 3 files in `data/`: `test_100k.csv, train_100k.csv and train_100k.truth.csv`.
 
 In folder `req` there is the file `requeriments.txt`, where you will find the librarys necessary for run.
-For install librarys:
+To install librarys:
 
 > pip install -r req.txt
 
