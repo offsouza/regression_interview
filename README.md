@@ -12,15 +12,15 @@ Important: This task is simple enough to solve by other means. However, your res
 
 # Methodology
 
-Fist I start with a Neural Network with a 4 layers and 100 neurons each, during all process was used Relu activation function for all layers except for output layers where was used linear function and too Adam optimizer for all process. The results wasn't good for the fist test with 500 epochs.
+First I start with a Neural Network with a 4 layers and 100 neurons each, during all process was used Relu activation function for all layers except for output layers where was used linear function and also Adam optimizer for all process. The results wasn't good for the fist test with 500 epochs.
 
 I tried many type of the configuration, increasing and reduce the number of neurons, layers, epochs and learning rate, but always I had a problem. So I plot the loss chart and I saw that a network was probably overfitting. 
 
-I split the database into train (70%) and test (30%) to check how the model behave with a new data. I again a tried several setting as Dropout for the regulation, update learning rate, dacay but the best configuration was when I put L2 regularization  in the second layer and put only 2 hidden layers with 1000 neurons each. 
+I split the database into training (70%) and test (30%) to check how the model behave with a new data. I again a tried several setting as Dropout for the regulation, update learning rate, dacay but the best configuration was when I put L2 regularization  in the hidden layers with 1000 neurons each. 
 
 After this, the network was able to the low loss of training and test data without increasing the loss during the epochs.
 I used some methods to the data normalization, but made no many difference in the final result.
 
-Was train the last model using 1000 epochs.
+Was trained the last model using 1000 epochs.
 
 Because of the training time I could not test more parameters, but maybe it's possible improve the result of this network, reducing the learning rate, trying other optimizers and analyzing better the input data.
