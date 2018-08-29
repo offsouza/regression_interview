@@ -1,4 +1,4 @@
-# Regression NN
+# Neural Network Regression
 
 ## Overview
 The purpose of this task is to test your knowledge and capabilities using neural networks to solve problems.
