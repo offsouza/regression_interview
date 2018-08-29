@@ -24,3 +24,30 @@ I used some methods to the data normalization, but made no many difference in th
 Was trained the last model using 1000 epochs.
 
 Because of the training time I could not test more parameters, but maybe it's possible improve the result of this network, reducing the learning rate, trying other optimizers and analyzing better the input data.
+
+## For Run
+
+In folder `req` there is the archive `requeriments.txt`, you will find the librarys necessary for run.
+> pip install -r req.txt
+
+However if you used Anaconda, cuda 8.0 and have a GPU, you can create a env base in basetgpu, follwed next code to create.
+In directory `req` you will find `basetfgpu.yml` .In terminal put the codes below:
+
+> conda env create -n teste -f basetfgpu.yml
+
+To activative in linux and Mac:
+
+> source activate basetfgpu
+
+or for Windows:
+
+> activate basetfgpu
+
+So run the code: 
+
+> python interview.py
+
+
+Then, to see the loss score:
+
+> python evaluate.py results/submission_train.csv data/train_100k.truth.csv 
