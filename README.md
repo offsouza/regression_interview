@@ -51,3 +51,11 @@ Run the script `interview.py`:
 Then, to see the loss score:
 
 > python evaluate.py results/submission_train.csv data/train_100k.truth.csv 
+
+## Results
+
+
+I got this loss score :
+
+`Slope mse: 0.03596314032215982
+Intercept mae: 4.598533536702228`
