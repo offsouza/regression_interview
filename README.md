@@ -26,8 +26,11 @@ Was trained the last model using 1000 epochs.
 Because of the training time I could not test more parameters, but maybe it's possible improve the result of this network, reducing the learning rate, trying other optimizers and analyzing better the input data.
 
 ## For Run
+First, unzip train.zip and test.zip in directory `data/`. Then, you will have a 3 files in `data/`: `test_100k.csv, train_100k.csv and train_100k.truth.csv`.
 
-In folder `req` there is the archive `requeriments.txt`, you will find the librarys necessary for run.
+In folder `req` there is the file `requeriments.txt`, where you will find the librarys necessary for run.
+For install librarys:
+
 > pip install -r req.txt
 
 However if you used Anaconda, cuda 8.0 and have a GPU, you can create an env based on the basetgpu file, follow the next codes to create.
@@ -53,7 +56,6 @@ Then, to see the loss score:
 > python evaluate.py results/submission_train.csv data/train_100k.truth.csv 
 
 ## Results
-
 
 I got this loss score :
 
