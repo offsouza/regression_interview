@@ -10,9 +10,9 @@ Note that this is a toy task, simple enough to be solved with other means. Howev
 
 Important: This task is simple enough to solve by other means. However, your result should be one neural network that any set of 10 points can be fed into to get the answer. That is, you should not create any sort of algorithm that figures out the slope and intercept on a row-by-row basis. The end result is one network with one set of trained weights.
 
-# Methodology
+## Methodology
 
-First I start with a Neural Network with a 4 layers and 100 neurons each, during all process was used Relu activation function for all layers except for output layers where was used linear function and also Adam optimizer for all process. The results wasn't good for the fist test with 500 epochs.
+First, I start with a Neural Network with a 4 layers and 100 neurons each, during all process was used Relu activation function for all layers except for output layers where was used linear function and also Adam optimizer for all process. The results wasn't good for the fist test with 500 epochs.
 
 I tried many type of the configuration, increasing and reduce the number of neurons, layers, epochs and learning rate, but always I had a problem. So I plot the loss chart and I saw that a network was probably overfitting. 
 
@@ -30,20 +30,20 @@ Because of the training time I could not test more parameters, but maybe it's po
 In folder `req` there is the archive `requeriments.txt`, you will find the librarys necessary for run.
 > pip install -r req.txt
 
-However if you used Anaconda, cuda 8.0 and have a GPU, you can create a env base in basetgpu, follwed next code to create.
+However if you used Anaconda, cuda 8.0 and have a GPU, you can create an env based on the basetgpu file, follow the next codes to create.
 In directory `req` you will find `basetfgpu.yml` .In terminal put the codes below:
 
-> conda env create -n teste -f basetfgpu.yml
+> conda env create -n tfgpu -f basetfgpu.yml
 
 To activative in linux and Mac:
 
-> source activate basetfgpu
+> source activate tfgpu
 
 or for Windows:
 
-> activate basetfgpu
+> activate tfgpu
 
-So run the code: 
+Run the script `interview.py`: 
 
 > python interview.py
 
